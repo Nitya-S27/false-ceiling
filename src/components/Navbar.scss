@@ -1,0 +1,33 @@
+$color1: #325288;
+$color2: #f4eee8;
+$color3: #f5cebe;
+$color4: #114e60;
+.navbarWrapper {
+  background-color: $color4;
+  color: $color2;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem 10px;
+  @media (max-width: 600px) {
+    display: none;
+  }
+  .logo {
+    width: 10rem;
+    padding: 0.5rem 0;
+  }
+  .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    .navLink {
+      color: $color2;
+      text-decoration: none;
+    }
+  }
+}
