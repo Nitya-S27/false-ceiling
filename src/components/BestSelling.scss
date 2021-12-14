@@ -1,0 +1,106 @@
+$color1: #325288;
+$color2: #f4eee8;
+$color3: #f5cebe;
+$color4: #114e60;
+$light-font-color: #507dcc;
+
+.bestSellingWrapper {
+  padding: 2rem 10%;
+  .header {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 1rem 0;
+    @media (max-width: 1024px) {
+      font-size: 1.5rem;
+    }
+  }
+  .products {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 0;
+    @media (max-width: 600px) {
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .productCard {
+      padding: 0 1rem;
+      text-align: center;
+      .productImage {
+        width: 100%;
+        background-color: #f7f8f8;
+        @media (max-width: 1024px) {
+          width: 80%;
+        }
+        @media (max-width: 600px) {
+          width: 95%;
+        }
+      }
+      .title {
+        font-size: 1rem;
+        font-weight: 500;
+        margin: 1rem 0;
+        margin-bottom: 0;
+        @media (max-width: 1024px) {
+          font-size: 0.9rem;
+        }
+        @media (max-width: 600px) {
+          font-size: 1rem;
+        }
+      }
+      .divider {
+        width: 50px;
+        border-top: 2px solid #114e60;
+        margin: 0.5rem auto;
+      }
+      .priceDiv {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 60%;
+        margin: 0 auto;
+        .currentPrice {
+          color: $color4;
+          font-weight: 600;
+          font-size: 1.5rem;
+          @media (max-width: 1024px) {
+            font-size: 1.1rem;
+          }
+        }
+        .oldPrice {
+          color: gray;
+          font-size: 0.9rem;
+          @media (max-width: 1024px) {
+            font-size: 0.7rem;
+          }
+        }
+      }
+      .text {
+        font-size: 0.8rem;
+        color: gray;
+        @media (max-width: 1024px) {
+          font-size: 0.6rem;
+        }
+      }
+      .bold {
+        font-weight: bolder;
+      }
+      .emi {
+        margin: 1rem 0 0.3rem 0;
+        color: $color4;
+        font-size: 0.8rem;
+        @media (max-width: 1024px) {
+          font-size: 0.7rem;
+        }
+      }
+      .discount {
+        font-size: 0.9rem;
+        color: $color4;
+        @media (max-width: 1024px) {
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+}
