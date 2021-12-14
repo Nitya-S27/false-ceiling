@@ -2,7 +2,7 @@ $color1: #325288;
 $color2: #f4eee8;
 $color3: #f5cebe;
 $color4: #114e60;
-$light-font-color: #507dcc;
+$color5: #507dcc;
 
 .footerWrapper {
   padding: 5% 10% 1%;
@@ -14,45 +14,71 @@ $light-font-color: #507dcc;
     flex-direction: column;
     padding-right: 10%;
     .logoDiv {
-      margin-bottom: 7%;
+      margin-bottom: 5%;
+      img {
+        width: 50%;
+      }
     }
     .leftTop {
       display: flex;
       justify-content: space-between;
       .leftTop__info {
         h1 {
+          margin: 0;
           font-weight: bolder;
-          font-size: 2.5rem;
-          color: $light-font-color;
+          font-size: 2rem;
+          color: $color5;
+          @media (max-width: 1024px) {
+            font-size: 1.2rem;
+          }
         }
         .linksDiv__top {
           display: flex;
           flex-direction: column;
           a {
+            font-size: 0.8rem;
             text-decoration: none;
             line-height: 2.3;
             color: white;
+            @media (max-width: 1024px) {
+              line-height: 2;
+            }
           }
         }
+      }
+
+      @media (max-width: 600px) {
+        flex-direction: column;
       }
     }
     .leftBottom {
       h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
         font-weight: bolder;
-        color: $light-font-color;
+        color: $color5;
+        @media (max-width: 1024px) {
+          font-size: 1.2rem;
+        }
       }
       .linksDiv__bottom {
         display: flex;
         flex-wrap: wrap;
         a {
+          font-size: 0.8rem;
           text-decoration: none;
           color: white;
           border-right: 2px solid white;
           padding: 0 1%;
           margin-bottom: 3%;
+          @media (max-width: 1024px) {
+            margin-bottom: 2%;
+          }
         }
       }
+    }
+    @media (max-width: 1024px) {
+      width: 100%;
+      padding: 0;
     }
   }
   .rightDiv {
@@ -61,28 +87,42 @@ $light-font-color: #507dcc;
       form {
         h1 {
           margin: 0;
-          font-size: 3.5rem;
+          font-size: 2.3rem;
           font-weight: bolder;
           color: white;
+          @media (max-width: 1024px) {
+            font-size: 1.3rem;
+            margin: 5% auto 5%;
+            color: $color5;
+          }
         }
         p {
+          margin: 3% auto 5%;
           font-style: italic;
           color: white;
-          font-size: 2rem;
+          font-size: 1.8rem;
+          @media (max-width: 1024px) {
+            font-size: 1rem;
+            margin: 1% auto 2%;
+          }
         }
         input {
           width: 100%;
           position: relative;
-          color: $light-font-color;
-          font-size: 1.5rem;
+          color: $color5;
+          font-size: 1.3rem;
           font-weight: bolder;
           border: none;
           outline: none;
           background-color: transparent;
           border-bottom: 1px solid white;
-          padding: 5% 0 2%;
+          padding: 3% 0 1%;
           &::placeholder {
             font-weight: normal;
+          }
+          @media (max-width: 1024px) {
+            padding: 0 0 1% 0;
+            font-size: 1rem;
           }
         }
         button {
@@ -90,40 +130,60 @@ $light-font-color: #507dcc;
           right: 10%;
           background-color: transparent;
           border: none;
-          font-size: 2.7rem;
+          font-size: 2.3rem;
           color: white;
           &:hover {
             cursor: pointer;
+          }
+          @media (max-width: 1024px) {
+            font-size: 1.5rem;
+            right: 5%;
           }
         }
       }
     }
     .socialIcons {
-      margin: 7% auto 7%;
+      margin: 4% auto 4%;
       .icon {
         color: white;
-        font-size: 2rem;
+        font-size: 1.3rem;
         margin-right: 3%;
       }
     }
     .rightBottom {
       h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
         font-weight: bolder;
-        color: $light-font-color;
+        color: $color5;
+        @media (max-width: 1024px) {
+          font-size: 1.2rem;
+        }
       }
       .linksDiv__bottom {
         display: flex;
         flex-wrap: wrap;
         a {
+          font-size: 0.8rem;
           text-decoration: none;
           color: white;
           border-right: 2px solid white;
           padding: 0 1.5%;
           margin-bottom: 4%;
+          @media (max-width: 1024px) {
+            margin-bottom: 2%;
+          }
         }
       }
     }
+    @media (max-width: 1024px) {
+      width: 100%;
+      padding: 0;
+    }
+  }
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    padding: 5%;
+    margin: 0;
   }
 }
 .copyright {
@@ -131,7 +191,7 @@ $light-font-color: #507dcc;
   width: 100%;
   margin: auto;
   color: white;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   text-align: center;
   padding-bottom: 5%;
 }

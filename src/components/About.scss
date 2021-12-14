@@ -1,0 +1,45 @@
+$color1: #325288;
+$color2: #f4eee8;
+$color3: #f5cebe;
+$color4: #114e60;
+$color5: #507dcc;
+
+.about {
+  padding: 3% 10% 5%;
+  background-color: $color2;
+  h1 {
+    font-size: 2.5rem;
+    @media (max-width: 1024px) {
+      font-size: 2rem;
+    }
+  }
+  div {
+    p {
+      font-size: 1rem;
+      line-height: 2;
+      color: grey;
+      @media (max-width: 1024px) {
+        font-size: 0.8rem;
+      }
+    }
+    button {
+      border: none;
+      outline: none;
+      background: transparent;
+      font-size: 1.1rem;
+      text-decoration: underline;
+      margin-top: 3%;
+      padding: 0;
+      letter-spacing: 1.2px;
+      &:hover {
+        cursor: pointer;
+        color: grey;
+      }
+      @media (max-width: 1024px) {
+        margin-top: 10%;
+        font-size: 0.8rem;
+        font-weight: bolder;
+      }
+    }
+  }
+}
