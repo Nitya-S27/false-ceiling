@@ -1,3 +1,138 @@
-$color1: #2566c4;
-$color2: #3b76ca;
-$light-font-color: #3a78a0;
+$color1: #325288;
+$color2: #f4eee8;
+$color3: #f5cebe;
+$color4: #114e60;
+$light-font-color: #507dcc;
+
+.footerWrapper {
+  padding: 5% 10%;
+  display: flex;
+  background-color: $color1;
+  position: relative;
+  .leftDiv {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 10%;
+    .logoDiv {
+      margin-bottom: 7%;
+    }
+    .leftTop {
+      display: flex;
+      justify-content: space-between;
+      .leftTop__info {
+        h1 {
+          font-weight: bolder;
+          font-size: 2.5rem;
+          color: $light-font-color;
+        }
+        .linksDiv__top {
+          display: flex;
+          flex-direction: column;
+          a {
+            text-decoration: none;
+            line-height: 2.3;
+            color: white;
+          }
+        }
+      }
+    }
+    .leftBottom {
+      h1 {
+        font-size: 2.5rem;
+        font-weight: bolder;
+        color: $light-font-color;
+      }
+      .linksDiv__bottom {
+        display: flex;
+        flex-wrap: wrap;
+        a {
+          text-decoration: none;
+          color: white;
+          border-right: 2px solid white;
+          padding: 0 1%;
+          margin-bottom: 3%;
+        }
+      }
+    }
+  }
+  .rightDiv {
+    width: 40%;
+    .rightTop {
+      form {
+        h1 {
+          margin: 0;
+          font-size: 3.5rem;
+          font-weight: bolder;
+          color: white;
+        }
+        p {
+          font-style: italic;
+          color: white;
+          font-size: 2rem;
+        }
+        input {
+          width: 100%;
+          position: relative;
+          color: $light-font-color;
+          font-size: 1.5rem;
+          font-weight: bolder;
+          border: none;
+          outline: none;
+          background-color: transparent;
+          border-bottom: 1px solid white;
+          padding: 5% 0 2%;
+          &::placeholder {
+            font-weight: normal;
+          }
+        }
+        button {
+          position: absolute;
+          right: 10%;
+          background-color: transparent;
+          border: none;
+          font-size: 2.7rem;
+          color: white;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .socialIcons {
+      margin: 7% auto 7%;
+      .icon {
+        color: white;
+        font-size: 2rem;
+        margin-right: 3%;
+      }
+    }
+    .rightBottom {
+      h1 {
+        font-size: 2.5rem;
+        font-weight: bolder;
+        color: $light-font-color;
+      }
+      .linksDiv__bottom {
+        display: flex;
+        flex-wrap: wrap;
+        a {
+          text-decoration: none;
+          color: white;
+          border-right: 2px solid white;
+          padding: 0 1.5%;
+          margin-bottom: 4%;
+        }
+      }
+    }
+  }
+}
+.copyright {
+  width: 100%;
+  margin: auto;
+  color: white;
+  font-size: 1.2rem;
+  position: absolute;
+  text-align: center;
+  bottom: -2rem;
+}
