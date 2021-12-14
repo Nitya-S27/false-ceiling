@@ -1,8 +1,12 @@
 import React from "react";
-import Footer from "../components/Footer";
+import Handpicked from "../components/Handpicked";
 
 const Landing = () => {
-  return <Footer />;
+  return (
+    <>
+      <Handpicked />
+    </>
+  );
 };
 
 export default Landing;

@@ -1,0 +1,52 @@
+$color1: #325288;
+$color2: #f4eee8;
+$color3: #f5cebe;
+$color4: #114e60;
+.handpickedWrapper {
+  padding: 1rem 10%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  font-family: Poppins;
+  .left {
+    flex: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // gap: 1rem;
+    .top {
+      display: flex;
+      justify-content: space-between;
+      .titleDiv {
+        flex: 60%;
+        .title {
+          font-size: 1.5rem;
+          margin: 0.5rem 0;
+          font-weight: bolder;
+        }
+        .para {
+          font-size: 0.8rem;
+          color: rgb(80, 80, 80);
+        }
+      }
+      .productDiv {
+        flex: 40%;
+        .productImg {
+          width: 100%;
+        }
+      }
+    }
+    .bottom {
+      .productImg {
+        width: 100%;
+      }
+    }
+  }
+  .right {
+    flex: 40%;
+    .productImg {
+      width: 100%;
+    }
+  }
+}
