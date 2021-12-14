@@ -13,6 +13,9 @@ $color4: #114e60;
   align-items: center;
   justify-content: space-around;
   padding: 1rem 10px;
+  @media (max-width: 600px) {
+    display: none;
+  }
   .logo {
     width: 10rem;
     padding: 0.5rem 0;
