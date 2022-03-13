@@ -1,0 +1,25 @@
+.carousel {
+  .ant-carousel .slick-slide img {
+    z-index: -100;
+    width: 100%;
+    height: 45rem;
+    @media (max-width: 1024px) {
+      width: min-content;
+      height: 40rem;
+    }
+    @media (max-width: 600px) {
+      width: min-content;
+      height: 47rem;
+    }
+  }
+}
+.container-background {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 15%;
+  bottom: 50%;
+  @media (max-width: 1024px) {
+    top: 20%;
+  }
+}

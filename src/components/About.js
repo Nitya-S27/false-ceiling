@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { BsPersonCircle } from "react-icons/bs";
 import "./About.scss";
 
 const About = () => {
@@ -12,30 +13,16 @@ const About = () => {
 
   return (
     <div className="about">
-      <h1>About Godrej Interio</h1>
       <div>
+        <h1>About Us</h1>
+        <BsPersonCircle className="icon" />
+        <h3>Digumber Singh</h3>
         <p>
-          Godrej Interio is India&quot;s premium furniture brand in both home
-          and institutional segments with a strong commitment to sustainability
-          and centers of excellence in design, manufacturing and retail.
-        </p>
-        <p>
-          Led by the largest in-house design team in the country in the
-          furniture category and awarded with 34 India Design Mark Awards till
-          date, Godrej Interio aims to transform spaces with its thoughtfully
-          designed furniture to create brighter homes and offices with products
-          that have the highest design quotient in aesthetics, functionality and
-          technology. With consistent pursuit of excellence and a special focus
-          on health and ergonomics, Godrej Interio&quot;s product portfolio
-          comprises a massive range in the home, office and other specialized
-          applications.
-        </p>
-        <p>
-          Godrej Interio&quot;s commitment to the environment has resulted in
-          manufacturing products with lesser carbon footprint. Godrej Interio
-          has the widest range of green choices for our customers which not only
-          includes products but also services such as green interiors and
-          recycling.
+          Digumber Singh is not only one, he is a tree of false ceiling
+          installation contractors for past 30 years. He is the most decorated
+          contractor of false ceiling. He is well-known for completing progress
+          on time and successfully dealing with various issues of false ceiling
+          and creation to give excellent service.
         </p>
         <button
           style={display ? { display: "block" } : { display: "none" }}
@@ -45,18 +32,22 @@ const About = () => {
         </button>
       </div>
       <div style={display ? { display: "none" } : { display: "block" }}>
+        <h2>About Our Firm</h2>
         <p>
-          Currently present in over 430 cities with 52 company owned stores and
-          over 800 dealers, Godrej Interio is one of the largest divisions of
-          Godrej and Boyce Mfg. Co. Ltd.
+          Classic false ceiling solutions is a firm specialized in false
+          ceiling, false flooring. acoustical installments etc. in commercial,
+          residential or industrial buildings or everywhere where it need.
         </p>
         <p>
-          The brand boasts of noteworthy awards received so far- CII Exim Bank
-          Award for Business Excellence 2017, Superbrands 2017-18, Asia&quot;s
-          most admired brand 2016, Reader&quot;s Digest Most Trusted Brand 2018
-          Gold &#40;Home Furniture &#41; and Reader&quot;s Digest Most Trusted
-          Brand 2018 Gold &#40;Modular Kitchens &#41;.
+          Our products are an integral, functional, design and sustainable
+          component of modern and emotional architecture. We all have dreamt of
+          living in a house that is the epitome of luxury and aesthetic. The
+          easiest way to achieve this, is by installing a false ceiling. If you
+          want to add more elegance feel in your home/office. You can take a
+          chance by adding various trending false ceiling in your ceiling. False
+          Ceiling helps to electrify your ceiling with latest stunning designs
         </p>
+
         <button onClick={hideDiv}>READ LESS</button>
       </div>
     </div>

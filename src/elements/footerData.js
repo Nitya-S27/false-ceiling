@@ -40,18 +40,6 @@ const footerData = [
         title: "Careers",
         link: "#",
       },
-      {
-        title: "Media",
-        link: "#",
-      },
-      {
-        title: "Green Initiative",
-        link: "#",
-      },
-      {
-        title: "Design Process",
-        link: "#",
-      },
     ],
   },
   {
@@ -115,7 +103,7 @@ const items = [
   "Sofa and Recliners",
   "Chairs",
   "Dressers",
-  "  Dining Set",
+  "Dining Set",
   "Tables",
   "Display Units",
   "Modular Kitchen",

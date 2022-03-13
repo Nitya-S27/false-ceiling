@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import "./Footer.scss";
-import { places, footerData, items } from "./footerData";
-import { AiOutlineArrowRight, AiOutlineTwitter } from "react-icons/ai";
+import { places, footerData, items } from "../elements/footerData";
+// import { AiOutlineArrowRight, AiOutlineTwitter } from "react-icons/ai";
 import { ImFacebook } from "react-icons/im";
 import { TiSocialInstagram } from "react-icons/ti";
 import { FaLinkedinIn } from "react-icons/fa";
+import { RiWhatsappFill } from "react-icons/ri";
 const Footer = () => {
   const [email, setEmail] = useState("");
 
@@ -46,10 +47,9 @@ const Footer = () => {
         </div>
         <div className="rightDiv">
           <div className="rightTop">
-            <form onSubmit={handleSubmit}>
-              <h1>Stay tuned to all our latest news</h1>
-              <p>Join Our Weekly Mailing List</p>
-              <input
+            <h1>Stay tuned to all our latest news</h1>
+            <p>Connect with ws through - </p>
+            {/* <input
                 onChange={(e) => setEmail(e.target.value)}
                 value={email}
                 type="email"
@@ -57,11 +57,10 @@ const Footer = () => {
               ></input>
               <button type="submit">
                 <AiOutlineArrowRight />
-              </button>
-            </form>
+              </button> */}
           </div>
           <div className="socialIcons">
-            <AiOutlineTwitter className="icon" />
+            <RiWhatsappFill className="icon" />
             <ImFacebook className="icon" />
             <TiSocialInstagram className="icon" />
             <FaLinkedinIn className="icon" />

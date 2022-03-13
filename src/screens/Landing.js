@@ -1,6 +1,6 @@
 import React from "react";
+import HeroBg from "../components/HeroBg";
 import Qualities from "../components/Qualities";
-import Handpicked from "../components/Handpicked";
 import About from "../components/About";
 import Footer from "../components/Footer";
 import BestSelling from "../components/BestSelling";
@@ -11,10 +11,10 @@ const Landing = () => {
   return (
     <>
       <Navbar />
+      <HeroBg />
       <BestSelling />
-      <Spotlight />
       <Qualities />
-      <Handpicked />
+      <Spotlight />
       <About />
       <Footer />
     </>

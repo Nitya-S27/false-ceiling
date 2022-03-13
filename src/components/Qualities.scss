@@ -5,16 +5,28 @@ $color4: #114e60;
 $color5: #507dcc;
 
 .qualitiesWrapper {
-  display: flex;
-  align-items: center;
-  padding: 1% 4%;
+  padding: 1.5% 0 2%;
   background-color: $color1;
   color: white;
   .qualities__statement {
-    font-size: 2.5rem;
+    padding: 0 5% 2.5%;
+    text-align: center;
+    h1 {
+      color: white;
+      font-weight: bolder;
+    }
+    p {
+      font-size: 1.1rem;
+      padding: 0 10%;
+      margin: 0;
+      @media (max-width: 1024px) {
+        padding: 0;
+        text-align: center;
+        font-size: 1rem;
+      }
+    }
     @media (max-width: 1024px) {
-      text-align: center;
-      font-size: 1.5rem;
+      padding: 4%;
     }
   }
   .qualities__des {
@@ -24,10 +36,10 @@ $color5: #507dcc;
     width: 100%;
 
     div {
-      padding: 3%;
-      margin: 1%;
+      padding: 1.5%;
       background-color: rgba(80, 125, 204, 0.5);
       width: 25%;
+      transition: all 0.3s ease;
       .icon {
         font-size: 5rem;
         @media (max-width: 1024px) {
@@ -35,25 +47,27 @@ $color5: #507dcc;
         }
       }
       h2 {
-        margin: 1%;
+        margin-top: 5%;
         font-size: 1.2rem;
+        color: white;
         @media (max-width: 1024px) {
-          font-size: 0.8rem;
+          font-size: 0.9rem;
         }
       }
-      p {
-        font-size: 0.9rem;
-        @media (max-width: 1024px) {
-          font-size: 0.6rem;
+      &:hover {
+        .icon,
+        h2 {
+          color: $color3;
         }
       }
       @media (max-width: 1024px) {
         width: 100%;
-        padding: 2% 0;
+        padding: 5% 0;
         margin: 2% auto 2%;
       }
     }
     @media (max-width: 1024px) {
+      padding: 0 2%;
       flex-direction: column;
     }
   }

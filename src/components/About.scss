@@ -7,13 +7,18 @@ $color5: #507dcc;
 .about {
   padding: 3% 10% 5%;
   background-color: $color2;
-  h1 {
-    font-size: 2.5rem;
-    @media (max-width: 1024px) {
-      font-size: 2rem;
-    }
-  }
+
   div {
+    h1 {
+      font-size: 2.5rem;
+      @media (max-width: 1024px) {
+        font-size: 2rem;
+      }
+    }
+    .icon {
+      font-size: 1.7rem;
+      margin-bottom: 1.5%;
+    }
     p {
       font-size: 1rem;
       line-height: 2;
@@ -36,7 +41,6 @@ $color5: #507dcc;
         color: grey;
       }
       @media (max-width: 1024px) {
-        margin-top: 10%;
         font-size: 0.8rem;
         font-weight: bolder;
       }
